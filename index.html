@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Illényi Keve Portfolio</title>
+  <meta name="description" content="Illényi Keve Portfolio — photography selection and contact." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">
+      <span class="brand-name">Illényi Keve Portfolio</span>
+    </a>
+    <nav class="header-nav">
+      <a class="header-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Featured photography">
+      <div class="gallery" id="gallery" tabindex="0">
+        <figure class="g-item"><img src="DJI_0052.jpg" alt="" loading="eager" fetchpriority="high" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00290.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00474-HDR.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00514.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00891.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00993-Enhanced-NR.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC02160.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC02364.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC02896.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC02983.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC03250.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC03829.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC04146.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC04259-Enhanced-NR.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC06036-Pano.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC08915.jpg" alt="" loading="eager" draggable="false" /></figure>
+        <figure class="g-item"><img src="DSC00090-Enhanced-NR.jpg" alt="" loading="eager" draggable="false" /></figure>
+      </div>
+
+      <div class="hero-overlay">
+        <h1>
+          <span class="line">Illényi Keve</span>
+          <span class="line italic">Portfolio</span>
+        </h1>
+        <div class="hero-ctas">
+          <a class="hero-cta" href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-hint" aria-hidden="true">
+        <span>Scroll or drag</span>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="contact-head">
+        <p class="eyebrow">Get in touch</p>
+        <h2>Tell me<br /><em>about your project.</em></h2>
+        <p class="contact-lede">
+          A brief outline is enough. I'll reply within one working day.
+        </p>
+      </div>
+
+      <form class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="phone">Phone <span class="optional">(optional)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" />
+        </div>
+        <div class="field">
+          <label for="type">Project type</label>
+          <select id="type" name="type" required>
+            <option value="" disabled selected>Select…</option>
+            <option>Event photography</option>
+            <option>Restaurant &amp; gastronomy</option>
+            <option>Interior &amp; real estate</option>
+            <option>Brand &amp; portrait</option>
+            <option>Full production</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="field field--wide">
+          <label for="date">Planned date <span class="optional">(if any)</span></label>
+          <input id="date" name="date" type="text" placeholder="e.g. September 2026" />
+        </div>
+        <div class="field field--wide">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required placeholder="Location, duration, intended use of the photographs…"></textarea>
+        </div>
+        <div class="form-submit">
+          <p class="form-note">
+            Or write to <a href="mailto:illenyi.keve@gmail.com">illenyi.keve@gmail.com</a>
+          </p>
+          <button type="submit">Send request</button>
+        </div>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">Illényi Keve</p>
+    <p class="footer-tag">Portfolio</p>
+    <p class="footer-copy">© <span id="year"></span> Budapest</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
